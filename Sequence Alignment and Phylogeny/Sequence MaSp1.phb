@@ -1,0 +1,32 @@
+#NEXUS
+
+[File saved Thu Jun 07 20:40:31 2018]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 8;
+	TAXLABELS
+		K_hibernalis_MaSp1
+		D_spinosa_1a
+		P_viridans_MaSp1
+		D_tenebrosus_1
+		L_hesperus_MaSp1
+		A_trifasciata_MaSp1
+		A_aurantia_MaSp1
+		A_bruennichi_MaSp1
+		;
+ENDBLOCK;
+
+
+BEGIN TREES;
+	TRANSLATE
+		1	K_hibernalis_MaSp1,
+		2	D_spinosa_1a,
+		3	P_viridans_MaSp1,
+		4	D_tenebrosus_1,
+		5	L_hesperus_MaSp1,
+		6	A_trifasciata_MaSp1,
+		7	A_aurantia_MaSp1,
+		8	A_bruennichi_MaSp1
+		;
+	UTREE * PHYLIP_1= (1,((2,(5,(6,(7,8)))),(3,4)));
+ENDBLOCK;
